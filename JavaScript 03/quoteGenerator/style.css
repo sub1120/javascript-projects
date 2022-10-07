@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote{
+    width: 80%;
+    background: #6A1B4D;
+    color: #ffffff;
+    border-radius: 5px;
+    padding:20px;
+    text-align: center;
+}
+
+q {
+    quotes:""" """ "‘" "’";
+    font-size: 30px;
+}
+
+q::before{
+    content: open-quote;
+}
+
+q::after{
+    content: close-quote;
+}
+
+.by{
+    margin-top: 10px;
+    text-align: right;
+}
+
+.gen-quote button{
+    padding:10px 15px;
+    border:3px solid #6A1B4D;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    color:#6A1B4D;
+}
+
+.gen-quote button:active{
+    border-color: #ffffff;
+    background-color: #BF3325;
+    color:#ffffff;
+}
