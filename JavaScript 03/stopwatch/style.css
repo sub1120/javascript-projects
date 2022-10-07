@@ -1,0 +1,27 @@
+.main{
+    width: 200px;
+    height: 200px;
+    margin:0px auto;
+    background-color: rgb(142, 87, 223);
+    text-align: center;
+    padding:20px;
+    border-radius: 120px;
+}
+
+.time{
+    color:white;
+    font-size: 25px;
+}
+
+.button{
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding:10px 15px;
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: rgb(225, 43, 143);
+    color: #fff;
+}

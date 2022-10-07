@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <h2 class="main-heading">Track Your Expenses</h2>
+        <div class="tracker">
+            <div class="tracker-input">
+                <input class="expense-name" type="text" name="name" id="name" placeholder="Movie">
+                <input class="expense-cost" type="number" name="cost" id="cost" placeholder="200">
+                <input class="expense-date" type="date" name="date" id="date">
+                <button class="add-expense">Add</button>
+            </div>
+            <div class="expense-list">
+                <div class="expense-filter">
+                    <select class="year" name="year" id="year">
+                        <option value="Any" class="year-option" selected>Any</option>
+                        <option value="2020" class="year-option">2020</option>
+                        <option value="2021" class="year-option">2021</option>
+                        <option value="2022" class="year-option">2022</option>
+                    </select>
+                    <select class="month" name="month" id="month"> 
+                        <option value="Any" class="month-option" selected>Any</option>
+                        <option value="0" class="month-option">Jan</option>
+                        <option value="1" class="month-option">Feb</option>
+                        <option value="2" class="month-option">Mar</option>
+                        <option value="3" class="month-option">Apr</option>
+                        <option value="4" class="month-option">May</option>
+                        <option value="5" class="month-option">Jun</option>
+                        <option value="6" class="month-option">Jul</option>
+                        <option value="7" class="month-option">Aug</option>
+                        <option value="8" class="month-option">Sep</option>
+                        <option value="9" class="month-option">Oct</option>
+                        <option value="10" class="month-option">Nov</option>
+                        <option value="11" class="month-option">Dec</option>
+                    </select>
+                </div>
+                <div class="expenses">
+                    
+                </div>
+                <div class="total">
+                    Total:
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
