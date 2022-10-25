@@ -1,4 +1,4 @@
-/* const countWord = () => {
+const countWord = () => {
     const textarea = document.querySelector("#text");
     let wordCount = 0;
     if (textarea.value != ''){
@@ -17,6 +17,6 @@
     countSpan.innerText = wordCount;
 }
 
-document.querySelector("#text").addEventListener("selectionchange", countWord); */
+document.querySelector("#text").addEventListener("selectionchange", countWord);
 
 console.log(this);
