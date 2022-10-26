@@ -23,7 +23,7 @@ const clearWindow = () => {
 }
 
 const choose = (event) => {
-    const choices = {0:'r', 1:'p', 2:'s'};
+    const choices = ['r', 'p', 's'];
     const userChoice = event.target.parentNode.id;
     const compChoice = choices[Math.floor(Math.random()*2)];
     
@@ -54,7 +54,7 @@ const choose = (event) => {
         }
     }
     document.querySelector(".choices").style.display = 'none';
-    setTimeout(clearWindow, 1000)
+    setTimeout(clearWindow, 500)
 }
 
 document.querySelectorAll('.choice img').forEach(ele => ele.addEventListener('click', choose))

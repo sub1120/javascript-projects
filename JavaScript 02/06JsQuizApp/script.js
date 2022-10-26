@@ -38,17 +38,18 @@ const submitBtn = document.querySelector("#submit");
 let currentQuiz = 0
 let score = 0
 
-loadQuiz()
+nextQuestion(0)
 
-function loadQuiz() {
-    document.querySelector("#question").innerText = quizData[currentQuiz].question;
-    document.querySelector("#a_text").innerText = quizData[currentQuiz].a;
-    document.querySelector("#b_text").innerText = quizData[currentQuiz].b;
-    document.querySelector("#c_text").innerText = quizData[currentQuiz].c;
-    document.querySelector("#d_text").innerText = quizData[currentQuiz].d;
-}
-
-function deselectAnswers() {
+function nextQuestion(currentQuiz) {
+    if (currentQuiz < quizData.length){
+        document.querySelector("#question").innerText = quizData[currentQuiz].question;
+        document.querySelector("#a_text").innerText = quizData[currentQuiz].a;
+        document.querySelector("#b_text").innerText = quizData[currentQuiz].b;
+        document.querySelector("#c_text").innerText = quizData[currentQuiz].c;
+        document.querySelector("#d_text").innerText = quizData[currentQuiz].d;
+    }else{
+        return true
+    }
 }
 
 function getSelected() {
@@ -63,6 +64,21 @@ function getSelected() {
     return answer;
 }
 
+function showScore(score){
+    const body = document.querySelector("body")
+    const question = document.querySelector(".quiz-container")
+    body.removeChild(question)
+    
+    const scoreboard = document.createElement('div');
+    scoreboard.setAttribute('class', 'quiz-container')
+    body.appendChild(scoreboard)
+        
+    const scoreCount = document.createElement('h3');
+    scoreCount.innerText = `Your Score is: ${score}`;
+    scoreCount.style.textAlign = 'center';
+    scoreboard.appendChild(scoreCount);
+}
+
 submitBtn.addEventListener('click', () => {
     if(currentQuiz < quizData.length){
         const answer = getSelected()
@@ -73,22 +89,7 @@ submitBtn.addEventListener('click', () => {
         currentQuiz += 1;
     }
 
-    if(currentQuiz < quizData.length){
-        loadQuiz();
-    }
-
-    if(currentQuiz === quizData.length){
-        const body = document.querySelector("body")
-        const question = document.querySelector(".quiz-container")
-        body.removeChild(question)
-
-        const scoreboard = document.createElement('div');
-        scoreboard.setAttribute('class', 'quiz-container')
-        body.appendChild(scoreboard)
-        
-        const scoreCount = document.createElement('h3');
-        scoreCount.innerText = `Your Score is: ${score}`;
-        scoreCount.style.textAlign = 'center';
-        scoreboard.appendChild(scoreCount);
+    if(nextQuestion(currentQuiz)){
+        showScore(score)
     }
 })
