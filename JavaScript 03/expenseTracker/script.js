@@ -19,7 +19,7 @@ const allExpenses = []
 let filterExpenses = []
 
 const showExpenses = () => {
-    const expenseDiv = document.querySelector(".expenses");
+    const expenseDiv = document.querySelector(".expenses .list-group");
     expenseDiv.innerHTML = null;
     const expenseTotal = document.querySelector(".total");
     
@@ -37,24 +37,28 @@ const showExpenses = () => {
     })
 
     filterExpenses.forEach((ele) => {
-        const expenseItem = document.createElement('div');
-        expenseItem.setAttribute('class', 'expense-item');
+        const expenseItem = document.createElement('li');
+        expenseItem.setAttribute('class', 'list-group-item');
 
-        const expenseName = document.createElement('div');
-        expenseName.setAttribute('class', 'expense-item-name');
+        const expenseListItem = document.createElement('div');
+        expenseListItem.setAttribute('class', 'expense-item');
+        expenseItem.appendChild(expenseListItem);
+
+        const expenseName = document.createElement('span');
+        expenseName.setAttribute('class', 'expense-name');
         expenseName.innerText = ele.name;
-        expenseItem.appendChild(expenseName);
+        expenseListItem.appendChild(expenseName);
                     
-        const expenseDate = document.createElement('div');
-        expenseDate.setAttribute('class', 'expense-item-date');
-        expenseDate.innerText = ele.date.toLocaleDateString();
-        expenseItem.appendChild(expenseDate);
-
-        const expenseCost = document.createElement('div');
-        expenseCost.setAttribute('class', 'expense-item-cost');
+        const expenseCost = document.createElement('span');
+        expenseCost.setAttribute('class', 'expense-cost');
         expenseCost.innerText = `${ele.cost.toString()} Rs`;
-        expenseItem.appendChild(expenseCost);
+        expenseListItem.appendChild(expenseCost);
 
+        const expenseDate = document.createElement('span');
+        expenseDate.setAttribute('class', 'expense-date');
+        expenseDate.innerText = ele.date.toLocaleDateString();
+        expenseListItem.appendChild(expenseDate);
+        
         expenseDiv.appendChild(expenseItem);
     })
 
@@ -80,9 +84,9 @@ const clear = () =>{
     expense.name = undefined;
     expense.cost = undefined;
     expense.date = undefined;
-    document.querySelector(".expense-name").value = ''
-    document.querySelector(".expense-cost").value = ''
-    document.querySelector(".expense-date").value = ''
+    document.querySelector("#expense-name").value = ''
+    document.querySelector("#expense-cost").value = ''
+    document.querySelector("#expense-date").value = ''
 }
 
 const updateExpenseName = (event) => {
@@ -101,9 +105,9 @@ const updateExpenseDate = (event) => {
     expense.date = new Date(...dateList);
 }
 
-document.querySelector(".expense-name").addEventListener('selectionchange', updateExpenseName);
-document.querySelector(".expense-cost").addEventListener('selectionchange', updateExpenseCost);
-document.querySelector(".expense-date").addEventListener('change', updateExpenseDate);
-document.querySelector(".add-expense").addEventListener('click', addExpense);
+document.querySelector("#expense-name").addEventListener('selectionchange', updateExpenseName);
+document.querySelector("#expense-cost").addEventListener('selectionchange', updateExpenseCost);
+document.querySelector("#expense-date").addEventListener('change', updateExpenseDate);
+document.querySelector("#add-expense").addEventListener('click', addExpense);
 document.querySelector(".year").addEventListener('change', showExpenses);
 document.querySelector(".month").addEventListener('change', showExpenses);

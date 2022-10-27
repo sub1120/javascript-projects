@@ -4,45 +4,17 @@
 }
 
 .main{
-    margin:0px auto;
+    margin:10px auto;
     width:fit-content;
 }
 
-.main-heading{
-    color:#758283;
-    text-align: center;
+.tracker-input{
+    display: flex;
+    justify-content: space-between;
 }
 
-.tracker{
-    margin:10px 0px;
-}
-
-.expense-name{
-    border: 1px solid #CAD5E2;
-    border-radius: 3px;
-    padding:10px;
-}
-
-.expense-cost{
-    border: 1px solid #CAD5E2;
-    border-radius: 3px;
-    padding:10px;
-    width: 50px;
-}
-
-.expense-date{
-    border: 1px solid #CAD5E2;
-    border-radius: 3px;
-    padding:10px;
-}
-
-.add-expense{
-    border: none;
-    border-radius: 3px;
-    background-color: #3944F7;
-    color:#ffffff;
-    cursor:pointer;
-    padding:10px;
+.tracker-input input{
+    margin:0px 10px;
 }
 
 .expense-list{
@@ -54,60 +26,19 @@
 
 .expense-filter{
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    margin-left: 70%;
 }
 
-.year{
-    margin-left:5px;
-    background-color: #ffffff;
-    border:none;
-    border-radius: 3px;
-    padding:10px 15px;
-}
-
-.month{
-    margin-left:5px;
-    background-color: #ffffff;
-    border:none;
-    border-radius: 3px;
-    padding:10px 15px;
+.expense-filter select{
+    margin:0px 5px;
 }
 
 .expenses{
-    margin:10px 0px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.total{
-    color: #ffffff;
+    margin: 20px 0px;
 }
 
 .expense-item{
-    background-color: #FF6263;
-    border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    color:initial;
-    padding:5px 10px;
-    margin:10px 0px;
-}
-
-.expense-item-name{
-    flex:0.8;
-    text-align: left;
-    padding:5px;
-    color: #ffffff;
-}
-
-.expense-item-cost{
-    background: #ffffff;
-    padding:5px;
-    border-radius: 2.5px;
-}
-
-.expense-item-date{
-    padding:5px;
-    color: #ffffff;
 }
