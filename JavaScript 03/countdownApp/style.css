@@ -4,42 +4,13 @@
 }
 
 .countdown-container{
-    margin:0px auto;
     width: 300px;
-    height: 100px;
-    padding:10px;
-    background: #23C4ED;
+    margin:10px auto;
     border-radius: 5px;
     text-align: center;
 }
 
-.time-input{
-    display: flex;
-    justify-content: space-around;
-}
-
-.time{
-    width: 45px;
-    height:25px;
-    padding:5px;
-    border: none;
-    border-radius: 3px;
-}
-
-.start{
-    padding:10px 15px;
-    background: #FF6263;
-    border:none;
-    border-radius: 3px;
-    cursor: pointer;
-    color:#ffffff;
-}
-.start:active{
-    background: #ffffff;
-    color:black
-}
-
 .timmer{
     margin:30px;
-    font-size: 30px;
+    font-size: 200px;
 }
