@@ -26,3 +26,12 @@ In this assignment, there are 7 small apps given with HTML and CSS, we need to w
 In this assignment, we need to code 7 small apps from scratch using HTML, CSS and javascript.
 
 [Common Deployed Link](https://playful-malabi-fb2e51.netlify.app/javascript%2003/)
+
+| Project Snap      | Deployed Link |
+| ----------- | ----------- |
+|![cartApp](./JavaScript%2003/images/proj01.png)|[cartApp](https://playful-malabi-fb2e51.netlify.app/javascript%2003/cartapp/)|
+|![countdownapp](./JavaScript%2003/images/proj02.png)|[countdownapp](https://playful-malabi-fb2e51.netlify.app/javascript%2003/countdownapp/)|
+|![expensetracker](./JavaScript%2003/images/proj03.png)|[expensetracker](https://playful-malabi-fb2e51.netlify.app/javascript%2003/expensetracker/)|
+|![quotegenerator](./JavaScript%2003/images/proj04.png)|[quotegenerator](https://playful-malabi-fb2e51.netlify.app/javascript%2003/quotegenerator/)|
+|![stopwatch](./JavaScript%2003/images/proj05.png)|[stopwatch](https://playful-malabi-fb2e51.netlify.app/javascript%2003/stopwatch/)|
+|![wordcount](./JavaScript%2003/images/proj06.png)|[wordcount](https://playful-malabi-fb2e51.netlify.app/javascript%2003/wordcount/)|
