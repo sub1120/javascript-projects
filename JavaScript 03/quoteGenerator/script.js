@@ -49,8 +49,8 @@ const showQuote = (event) => {
     const totalQuotes = quoteList.length;
     const randomIndex = Math.floor(Math.random()*(totalQuotes - 1))
 
-    document.querySelector('q').innerText = quoteList[randomIndex].quote
-    document.querySelector('.by').innerText = `- ${quoteList[randomIndex].by}`
+    document.querySelector('#para').innerText = quoteList[randomIndex].quote
+    document.querySelector('#by').innerText = quoteList[randomIndex].by
 }
 
 document.querySelector('button').addEventListener('click', showQuote);

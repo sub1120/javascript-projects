@@ -20,19 +20,6 @@
     text-align: center;
 }
 
-q {
-    quotes:""" """ "‘" "’";
-    font-size: 30px;
-}
-
-q::before{
-    content: open-quote;
-}
-
-q::after{
-    content: close-quote;
-}
-
 .by{
     margin-top: 10px;
     text-align: right;
