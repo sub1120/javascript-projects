@@ -7,8 +7,13 @@ let currentTime = {
 
 let intervalRef = null;
 
-const start = (event) => {
+const updateTimmer = () => {
   const timmer = document.querySelector(".time");
+  timmer.innerText = `${currentTime.hour}:${currentTime.min}:${currentTime.sec}:${currentTime.msec}`;
+}
+
+const start = (event) => {
+  
   if(!intervalRef){
     intervalRef = setInterval(() => {
         currentTime.msec += 4;
@@ -26,8 +31,8 @@ const start = (event) => {
           currentTime.min = 0;
           currentTime.hour += 1;
         }
-    
-        timmer.innerText = `${currentTime.hour}:${currentTime.min}:${currentTime.sec}:${currentTime.msec}`;
+
+        updateTimmer()
       }, 4);
   }
 };
@@ -43,7 +48,7 @@ const reset = (event) => {
     for (key in currentTime){
         currentTime[`${key}`] = 0;
     }
-    document.querySelector(".time").innerText = "00:00:00:00"
+    updateTimmer()
 }
 
 document.querySelector("#start").addEventListener("click", start);

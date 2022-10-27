@@ -1,27 +1,23 @@
 .main{
-    width: 200px;
-    height: 200px;
-    margin:0px auto;
-    background-color: rgb(142, 87, 223);
+    box-sizing: border-box;
+    width: 90vh;
+    height: 90vh;
+    background-color: rgb(123, 201, 211);
     text-align: center;
-    padding:20px;
-    border-radius: 120px;
+    border-radius: 45vh;
+    margin: 0px auto;
 }
 
 .time{
     color:white;
-    font-size: 25px;
+    font-size: 100px;
+    margin-bottom: 80px;
 }
 
-.button{
-    background-color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding:10px 15px;
-    cursor: pointer;
-}
-
-.button:active{
-    background-color: rgb(225, 43, 143);
-    color: #fff;
+.timmer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    padding:40px;
 }
