@@ -1,16 +1,17 @@
-# FSJS Cource |  JavaScript Assignments
+# FSJS Course |  JavaScript Projects
 
+## Assignment #1 : DOM Manupulation
 
+![](./JavaScript%2001/banner.png)
 
-## Assignment #1
-In this assignment, there are 20 tasks given in markdown file, complete each task and update solution in file.
+In this assignment, there are 20 tasks given related to dom manupulation, complete each task and update the solution in markdown file.
 
 [Solution Markdown File](./JavaScript%2001/readme.md)
 
-## Assignment #2
-In this assignment, there are 7 small apps given with HTML and CSS, we need to write app logic using javascript.
+## Assignment #2 : Code Javascript Logic
+In this assignment, we have given 7 apps with pre-witten HTML and CSS. We need to code missing logic using javascript.
 
-[Common Deployed Link](https://playful-malabi-fb2e51.netlify.app/javascript%2002/)
+[Deployed Link](https://playful-malabi-fb2e51.netlify.app/javascript%2002/)
 
 | Project Snap      | Deployed Link |
 | ----------- | ----------- |
@@ -22,10 +23,10 @@ In this assignment, there are 7 small apps given with HTML and CSS, we need to w
 |![06jsquizapp](./JavaScript%2002/images/proj06.png)|[06jsquizapp](https://playful-malabi-fb2e51.netlify.app/javascript%2002/06jsquizapp/)|
 |![07seewhatyoutype](./JavaScript%2002/images/proj07.png)|[07seewhatyoutype](https://playful-malabi-fb2e51.netlify.app/javascript%2002/07seewhatyoutype/)|
 
-## Assignment #3
+## Assignment #3 : Code from Scratch
 In this assignment, we need to code 7 small apps from scratch using HTML, CSS and javascript.
 
-[Common Deployed Link](https://playful-malabi-fb2e51.netlify.app/javascript%2003/)
+[Deployed Link](https://playful-malabi-fb2e51.netlify.app/javascript%2003/)
 
 | Project Snap      | Deployed Link |
 | ----------- | ----------- |
