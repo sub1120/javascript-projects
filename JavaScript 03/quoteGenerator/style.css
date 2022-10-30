@@ -6,7 +6,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
 }
@@ -23,6 +23,13 @@
 .by{
     margin-top: 10px;
     text-align: right;
+}
+
+.gen-quote{
+    position: absolute;
+    bottom: 100px;
+    margin: 0px auto;
+    width: fit-content;
 }
 
 .gen-quote button{
