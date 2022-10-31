@@ -5,12 +5,21 @@
 
 .main{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .product-items{
     margin:20px;
-    flex:0.4;
+    flex:0.6
+}
+
+.cart-items{
+    position: fixed;
+    margin:20px;
+    width: 35%;
+    height: 500px;
+    overflow-y: scroll;
+    right:0px;
 }
 
 .product{
@@ -18,42 +27,12 @@
     flex-direction: column;
 }
 
-.product-name{
-    font-size: 18px;
-}
-
-.product-button{
-    align-self: flex-end;
-    width: 80px;
-    height: 35px;
-    padding:5px 10px;
-    background-color: #ceda33;
-    color:#ffffff;
-    border:2px solid #ceda33;
-    border-radius: 2px;
-    cursor: pointer;
-    background-image: url('./icons/cart-plus.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.product-button:active{
-    background-color: #ffffff;
-    color:#000000;
-}
-
-.cart-items{
-    margin:20px;
-    flex:0.4;
-}
-
 .cart-product{
     display: flex;
     justify-content: space-between;
 }
 
-.cart-product-input{
+.cart-input{
     width: 55px;
     padding:5px;
     border:1px solid #d3d2d2;
